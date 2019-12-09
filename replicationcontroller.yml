@@ -5,11 +5,11 @@ metadata:
 spec:
   replicas: 5
   selector:
-    app: hello-world
+    app: hello-world # selects pod with this label
   template:
     metadata:
       labels:
-        app: hello-world
+        app: hello-world # creates pod with this label
     spec:
       containers:
       - name: hello-pod
